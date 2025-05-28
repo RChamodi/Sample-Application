@@ -1,0 +1,103 @@
+:root {
+  --table-header-bg: #f2f2f2;
+  --table-row-stripe: #f9f9f9;
+  --table-border-color: #ddd;
+}
+body {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app-layout {
+  display: flex;
+  height: calc(100vh - 64px);;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: var(--bg-color);
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sidebar a:hover {
+  color: #007bff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.topnav {
+  background-color: var(--bg-color);
+  color: #333;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 64px;
+}
+
+.topnav a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+
+.app-layout, .main-content, .topnav, .sidebar {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-link {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.product-link:hover {
+  text-decoration: underline;
+}
+
+.product-price {
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid var(--table-border-color);
+  padding: 8px;
+  text-align: left;
+}
+
+.cart-table thead th {
+  background-color: var(--table-header-bg);
+}
+
+.cart-table tbody tr:nth-child(even) {
+  background-color: var(--table-row-stripe);
+}
