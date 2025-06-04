@@ -31,7 +31,7 @@ export default function PaymentPage() {
           </tbody>
         </table>
         <p style={{ marginTop: '20px' }}><strong>Total:</strong> Rs {totalPrice.toFixed(2)}</p>
-        <button onClick={() => alert('Payment processed!')} style={{ marginTop: '10px' }}>
+        <button onClick={() =>alert('Payment processed!')} style={{ marginTop: '10px', borderRadius:'8px' }}>
           Pay Now
         </button>
       </div>
@@ -72,7 +72,7 @@ export default function PaymentPage() {
         </tbody>
       </table>
       <p style={{ marginTop: '20px' }}><strong>Total:</strong> Rs {total.toFixed(2)}</p>
-      <button onClick={() => alert('Payment processed!')} style={{ marginTop: '10px' }}>
+      <button onClick={() => alert('Payment processed!')} style={{ padding: '10px 20px', borderRadius:'8px' }}>
         Pay Now
       </button>
     </div>

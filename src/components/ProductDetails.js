@@ -46,8 +46,8 @@ export default function ProductDetails() {
         <p>{product.stock - quantity} items remaining</p>
         {quantity === product.stock && <p style={{ color: 'red' }}>Maximum quantity reached</p>}
       </div>
-      <button onClick={handleAddToCart} style={{ marginRight: '10px' }}>Add to Cart</button>
-      <button onClick={handleBuyNow}>Buy Now</button>
+      <button onClick={handleAddToCart} style={{ marginRight: '10px',padding: '10px 20px',borderRadius: '8px' }}>Add to Cart</button>
+      <button onClick={handleBuyNow} style={{ marginRight: '10px',padding: '10px 20px',borderRadius: '8px' }}>Buy Now</button>
     </div>
   );
 }

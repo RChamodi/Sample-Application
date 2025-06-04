@@ -70,7 +70,7 @@ export default function ContactUs() {
           </label>
         </div>
 
-        <button type="submit" style={{ padding: '10px 20px' }}>
+        <button type="submit" style={{ padding: '10px 20px' ,borderRadius: '8px' }}>
           Submit
         </button>
       </form>

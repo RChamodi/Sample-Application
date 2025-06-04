@@ -44,7 +44,7 @@ export default function CartPage() {
 
       <p><strong>Total:</strong> Rs {total.toFixed(2)}</p>
       <Link to="/payment">
-        <button>Proceed to Payment</button>
+        <button  style={{ padding: '10px 20px',borderRadius:'8px' }}>Proceed to Payment</button>
       </Link>
     </div>
   );
