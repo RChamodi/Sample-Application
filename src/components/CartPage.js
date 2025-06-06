@@ -13,7 +13,7 @@ export default function CartPage() {
     return (
       <div style={{ padding: '20px' }}>
         <h2>Your Cart is Empty</h2>
-        <Link to="/products">← Continue Shopping</Link>
+        <Link to="/products" className="products-link">← Continue Shopping</Link>
       </div>
     );
   }
@@ -42,7 +42,7 @@ export default function CartPage() {
   </tbody>
 </table>
 
-      <p><strong>Total:</strong> Rs {total.toFixed(2)}</p>
+      <p style={{ marginTop: '20px',textAlign:'right',marginRight:'240px' }}><strong>Total:</strong> Rs {total.toFixed(2)}</p>
       <Link to="/payment">
         <button  style={{ padding: '10px 20px',borderRadius:'8px' }}>Proceed to Payment</button>
       </Link>

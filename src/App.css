@@ -1,6 +1,6 @@
 .app-layout {
   display: flex;
-  height: calc(100vh - 64px);;
+  height: calc(100vh - 64px);
 }
 :root {
   --table-header-bg: #f2f2f2;
@@ -16,6 +16,10 @@ body.dark {
   --table-border-color: #444;
   --topnav-bg: #aeabab;     /* light grey */
   --sidebar-bg: #c8c7c7;
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .sidebar {
@@ -68,19 +72,6 @@ body.light {
   color: var(--text-color);
 }
 
-body.dark {
-  --bg-color: #121212;
-  --text-color: #f0f0f0;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-.app-layout, .main-content {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 .product-link {
   font-size: 1.2em;
   text-decoration: none;
@@ -88,7 +79,7 @@ body.dark {
 }
 
 .product-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .product-price {
@@ -171,4 +162,37 @@ body.dark {
   font-weight: bold;
   color: #000000;
   margin-right: auto;
+}
+
+.products-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.products-link:hover {
+  text-decoration: none;
+}
+button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+.quantity-button{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.quantity-button:hover {
+  background-color: rgb(174, 174, 173);
 }

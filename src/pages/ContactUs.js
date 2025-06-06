@@ -24,7 +24,7 @@ export default function ContactUs() {
       <div style={{ margin: '20px 0' }}>
         <p><strong>Phone:</strong> 045 227-0576</p>
         <p><strong>Email:</strong> support@freshmart.com</p>
-        <p><strong>Address:</strong> 123 Main Street, Kahawatta</p>
+        <p><strong>Address:</strong> 123, Main Street, Kahawatta</p>
       </div>
 
       <form onSubmit={handleSubmit}>

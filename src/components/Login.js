@@ -12,7 +12,7 @@ export default function Login() {
   };
 
   return (
-    <div style={{ maxWidth: '400px', margin: '50px auto', padding: '20px', border: '1px solid #ccc' }}>
+    <div style={{ maxWidth: '400px', margin: '50px auto', padding: '50px', border: '1px solid #ccc' }}>
       <h2>Login</h2>
       <form onSubmit={handleLogin}>
         <div style={{ marginBottom: '15px' }}>
