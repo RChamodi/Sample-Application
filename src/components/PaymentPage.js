@@ -1,5 +1,6 @@
 import { useCart } from '../context/CartContext';
 import { useLocation } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 export default function PaymentPage() {
   const { cartItems } = useCart();
@@ -31,7 +32,7 @@ export default function PaymentPage() {
           </tbody>
         </table>
         <p style={{ marginTop: '20px',textAlign:'right',marginRight: '230px' }}><strong>Total: </strong> Rs {totalPrice.toFixed(2)}</p>
-        <button onClick={() =>alert('Payment processed!')} style={{ padding: '10px 20px', borderRadius:'8px' }}>
+        <button onClick={() =>toast.success('Payment Processed!')} style={{ padding: '10px 20px', borderRadius:'8px' }}>
           Pay Now
         </button>
       </div>
@@ -72,7 +73,7 @@ export default function PaymentPage() {
         </tbody>
       </table>
       <p style={{ marginTop: '20px',textAlign:'right',marginRight:'240px' }}><strong>Total:</strong> Rs {total.toFixed(2)}</p>
-      <button onClick={() => alert('Payment processed!')} style={{ padding: '10px 20px', borderRadius:'8px' }}>
+      <button onClick={() => toast.success('Payment processed!')} style={{ padding: '10px 20px', borderRadius:'8px' }}>
         Pay Now
       </button>
     </div>

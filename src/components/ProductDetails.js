@@ -2,6 +2,7 @@ import { Link,useParams, useHistory } from 'react-router-dom';
 import { useState } from 'react';
 import { products } from '../data/products';
 import { useCart } from '../context/CartContext';
+import { toast } from 'react-toastify';
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -16,7 +17,7 @@ export default function ProductDetails() {
 
   const handleAddToCart = () => {
     addToCart(product, quantity);
-    alert('Product added to cart!');
+    toast.success('Added to cart!');
   };
 
   if (!product) return <p>Product not found</p>;

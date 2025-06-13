@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -10,7 +11,7 @@ export default function ContactUs() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    alert('Message submitted. Thank you!');
+    toast.success('Message submitted. Thank you!');
     setFormData({ name: '', email: '', message: '' });
   };
 

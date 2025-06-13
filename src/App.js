@@ -11,6 +11,8 @@ import AboutUs from './pages/AboutUs';
 import './App.css';
 import { CartProvider } from './context/CartContext';
 import CartPage from './components/CartPage';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <CartProvider>
@@ -29,10 +31,11 @@ function App() {
             <Route path="/about" component={AboutUs} />
             <Route path="/login" component={Login} />
             <Route path="/cart" component={CartPage} />
-
+ 
           </Switch>
         </div>
       </div>
+      <ToastContainer autoClose={3000}  style={{ marginTop: '90px' }} />
       </div>
     </Router>
     </CartProvider>

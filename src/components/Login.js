@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { toast } from 'react-toastify';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -7,7 +7,7 @@ export default function Login() {
 
   const handleLogin = e => {
     e.preventDefault();
-    alert("Login Successful");
+    toast.success("Login Successful");
     
   };
 
